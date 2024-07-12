@@ -1,8 +1,5 @@
 <template>
-  <header>
-    <a href="#" class="logo-img">
-      <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/logo.svg" alt="logo">
-    </a>
+  <nav class="layout-nav-wrap">
     <transition>
       <a href="#" class="hamburger-list-icon"
         @click.prevent="mediaLinkActive =! mediaLinkActive"
@@ -11,231 +8,66 @@
       </a>
     </transition>
     <transition>
-      <a href="#" class="cancle-list-icon"
+      <a href="#" class="cancel-list-icon"
         @click.prevent="mediaLinkActive =! mediaLinkActive"
         v-show="mediaLinkActive">
-        <img src="https://i.imgur.com/oD1wN6h.png" alt="cancle-list-icon">
+        <img src="https://i.imgur.com/oD1wN6h.png" alt="cancel-list-icon">
       </a>
     </transition>
-    <nav class="header-nav">
-      <ul class="link-wrap">
-        <li :class="{ 'nav-active' : $route.path === '/' }">
-          <RouterLink to="/">
-            首頁
+    <div class="container">
+      <div class="logo-img">
+        <a href="#">
+          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png" alt="logo">
+        </a>
+      </div>
+      <ul class="layout-link-group">
+        <li :class="{ 'link-active' : $route.path === '/' }">
+          <RouterLink class="fz-20 light-color" to="/">
+            系列鏡框
           </RouterLink>
-          <span class="nav-list-top-left">
-            <img src="https://i.imgur.com/ni1GuZi.png"
-                alt="top-left-icon">
-          </span>
-          <span class="nav-list-top-right">
-            <img src="https://i.imgur.com/Fb8fW14.png"
-                alt="top-right-icon">
-          </span>
-          <span class="nav-list-bottom-left">
-            <img src="https://i.imgur.com/AU1fMFX.png"
-                alt="buttom-left-icon">
-          </span>
-          <span class="nav-list-bottom-right">
-            <img src="https://i.imgur.com/2HKFkrv.png"
-                alt="buttom-right-icon">
-          </span>
         </li>
-        <li :class="{ 'nav-active' : $route.path === '/portfolio' }">
-          <RouterLink to="/portfolio">
-            作品集
+        <li :class="{ 'link-active' : $route.path === '/service' }">
+          <RouterLink class="fz-20 light-color" to="/service">
+            門市據點
           </RouterLink>
-          <span class="nav-list-top-left">
-            <img src="https://i.imgur.com/ni1GuZi.png"
-                alt="top-left-icon">
-          </span>
-          <span class="nav-list-top-right">
-            <img src="https://i.imgur.com/Fb8fW14.png"
-                alt="top-right-icon">
-          </span>
-          <span class="nav-list-bottom-left">
-            <img src="https://i.imgur.com/AU1fMFX.png"
-                alt="buttom-left-icon">
-          </span>
-          <span class="nav-list-bottom-right">
-            <img src="https://i.imgur.com/2HKFkrv.png"
-                alt="buttom-right-icon">
-          </span>
         </li>
-        <li :class="{ 'nav-active' : $route.path === '/service' }">
-          <RouterLink to="/service">
-            服務項目
-          </RouterLink>
-          <span class="nav-list-top-left">
-            <img src="https://i.imgur.com/ni1GuZi.png"
-                alt="top-left-icon">
-          </span>
-          <span class="nav-list-top-right">
-            <img src="https://i.imgur.com/Fb8fW14.png"
-                alt="top-right-icon">
-          </span>
-          <span class="nav-list-bottom-left">
-            <img src="https://i.imgur.com/AU1fMFX.png"
-                alt="buttom-left-icon">
-          </span>
-          <span class="nav-list-bottom-right">
-            <img src="https://i.imgur.com/2HKFkrv.png"
-                alt="buttom-right-icon">
-          </span>
-        </li>
-        <li :class="{ 'nav-active' : $route.path === '/blog' || $route.path === '/blog/UIUX-news'}">
-          <RouterLink to="/blog">
+        <li :class="{ 'link-active' : $route.path === '/blog' || $route.path === '/blog/UIUX-news'}">
+          <RouterLink class="fz-20 light-color" to="/blog">
             部落格
           </RouterLink>
-          <span class="nav-list-top-left">
-            <img src="https://i.imgur.com/ni1GuZi.png"
-                alt="top-left-icon">
-          </span>
-          <span class="nav-list-top-right">
-            <img src="https://i.imgur.com/Fb8fW14.png"
-                alt="top-right-icon">
-          </span>
-          <span class="nav-list-bottom-left">
-            <img src="https://i.imgur.com/AU1fMFX.png"
-                alt="buttom-left-icon">
-          </span>
-          <span class="nav-list-bottom-right">
-            <img src="https://i.imgur.com/2HKFkrv.png"
-                alt="buttom-right-icon">
-          </span>
         </li>
-        <li :class="{ 'nav-active' : $route.path === '/ablot'}">
-          <RouterLink to="/about">
-            聯絡我
+        <li :class="{ 'link-active' : $route.path === '/about'}">
+          <RouterLink class="fz-20 light-color" to="/about">
+            常見問題
           </RouterLink>
-          <span class="nav-list-top-left">
-            <img src="https://i.imgur.com/ni1GuZi.png"
-                alt="top-left-icon">
-          </span>
-          <span class="nav-list-top-right">
-            <img src="https://i.imgur.com/Fb8fW14.png"
-                alt="top-right-icon">
-          </span>
-          <span class="nav-list-bottom-left">
-            <img src="https://i.imgur.com/AU1fMFX.png"
-                alt="buttom-left-icon">
-          </span>
-          <span class="nav-list-bottom-right">
-            <img src="https://i.imgur.com/2HKFkrv.png"
-                alt="buttom-right-icon">
-          </span>
         </li>
       </ul>
-    </nav>
-    <transition>
-      <ul class="media-link-wrap" v-show="mediaLinkActive">
-        <li :class="{ 'nav-active' : $route.path === '/' }">
-          <RouterLink to="/" @click="closeMenu">
-            首頁
-          </RouterLink>
-          <span class="nav-list-top-left">
-            <img src="https://i.imgur.com/ni1GuZi.png"
-                alt="top-left-icon">
-          </span>
-          <span class="nav-list-top-right">
-            <img src="https://i.imgur.com/Fb8fW14.png"
-                alt="top-right-icon">
-          </span>
-          <span class="nav-list-bottom-left">
-            <img src="https://i.imgur.com/AU1fMFX.png"
-                alt="buttom-left-icon">
-          </span>
-          <span class="nav-list-bottom-right">
-            <img src="https://i.imgur.com/2HKFkrv.png"
-                alt="buttom-right-icon">
-          </span>
-        </li>
-        <li :class="{ 'nav-active' : $route.path === '/portfolio' }">
-          <RouterLink to="/portfolio" @click="closeMenu">
-            作品集
-          </RouterLink>
-          <span class="nav-list-top-left">
-            <img src="https://i.imgur.com/ni1GuZi.png"
-                alt="top-left-icon">
-          </span>
-          <span class="nav-list-top-right">
-            <img src="https://i.imgur.com/Fb8fW14.png"
-                alt="top-right-icon">
-          </span>
-          <span class="nav-list-bottom-left">
-            <img src="https://i.imgur.com/AU1fMFX.png"
-                alt="buttom-left-icon">
-          </span>
-          <span class="nav-list-bottom-right">
-            <img src="https://i.imgur.com/2HKFkrv.png"
-                alt="buttom-right-icon">
-          </span>
-        </li>
-        <li :class="{ 'nav-active' : $route.path === '/service' }">
-          <RouterLink to="/service" @click="closeMenu">
-            服務項目
-          </RouterLink>
-          <span class="nav-list-top-left">
-            <img src="https://i.imgur.com/ni1GuZi.png"
-                alt="top-left-icon">
-          </span>
-          <span class="nav-list-top-right">
-            <img src="https://i.imgur.com/Fb8fW14.png"
-                alt="top-right-icon">
-          </span>
-          <span class="nav-list-bottom-left">
-            <img src="https://i.imgur.com/AU1fMFX.png"
-                alt="buttom-left-icon">
-          </span>
-          <span class="nav-list-bottom-right">
-            <img src="https://i.imgur.com/2HKFkrv.png"
-                alt="buttom-right-icon">
-          </span>
-        </li>
-        <li :class="{ 'nav-active' : $route.path === '/blog' }">
-          <RouterLink to="/blog" @click="closeMenu">
-            部落格
-          </RouterLink>
-          <span class="nav-list-top-left">
-            <img src="https://i.imgur.com/ni1GuZi.png"
-                alt="top-left-icon">
-          </span>
-          <span class="nav-list-top-right">
-            <img src="https://i.imgur.com/Fb8fW14.png"
-                alt="top-right-icon">
-          </span>
-          <span class="nav-list-bottom-left">
-            <img src="https://i.imgur.com/AU1fMFX.png"
-                alt="buttom-left-icon">
-          </span>
-          <span class="nav-list-bottom-right">
-            <img src="https://i.imgur.com/2HKFkrv.png"
-                alt="buttom-right-icon">
-          </span>
-        </li>
-        <li :class="{ 'nav-active' : $route.path === '/about'}">
-          <RouterLink to="/about" @click="closeMenu">
-            聯絡我
-          </RouterLink>
-          <span class="nav-list-top-left">
-            <img src="https://i.imgur.com/ni1GuZi.png"
-                alt="top-left-icon">
-          </span>
-          <span class="nav-list-top-right">
-            <img src="https://i.imgur.com/Fb8fW14.png"
-                alt="top-right-icon">
-          </span>
-          <span class="nav-list-bottom-left">
-            <img src="https://i.imgur.com/AU1fMFX.png"
-                alt="buttom-left-icon">
-          </span>
-          <span class="nav-list-bottom-right">
-            <img src="https://i.imgur.com/2HKFkrv.png"
-                alt="buttom-right-icon">
-          </span>
-        </li>
-      </ul>
-    </transition>
-  </header>
+    </div>
+  </nav>
+  <transition>
+    <ul class="media-link-wrap" v-show="mediaLinkActive">
+      <li :class="{ 'nav-active' : $route.path === '/' }">
+        <RouterLink to="/" @click="closeMenu">
+          系列鏡框
+        </RouterLink>
+      </li>
+      <li :class="{ 'nav-active' : $route.path === '/service' }">
+        <RouterLink to="/service" @click="closeMenu">
+          門市據點
+        </RouterLink>
+      </li>
+      <li :class="{ 'nav-active' : $route.path === '/blog' }">
+        <RouterLink to="/blog" @click="closeMenu">
+          部落格
+        </RouterLink>
+      </li>
+      <li :class="{ 'nav-active' : $route.path === '/about'}">
+        <RouterLink to="/about" @click="closeMenu">
+          常見問題
+        </RouterLink>
+      </li>
+    </ul>
+  </transition>
   <RouterView />
   <footer>
     <div class="footer-logo">

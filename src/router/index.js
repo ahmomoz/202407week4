@@ -10,11 +10,6 @@ const routes = [
         component: () => import('@/views/user/UserHomeView.vue')
       },
       {
-        path: 'portfolio',
-        name: '作品集',
-        component: () => import('@/views/user/UserPortfolioView.vue')
-      },
-      {
         path: 'service',
         name: '服務項目',
         component: () => import('@/views/user/UserServiceView.vue')

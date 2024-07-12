@@ -1,32 +1,50 @@
-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: $primary-color-50;
-  z-index: 12;
-  border: 0.063rem solid $primary-color-200;
-}
-.header-nav {
-  padding: 2rem 0;
-  margin: 0 auto;
-}
-.link-wrap {
-  @include link-component;
-  display: flex;
-  justify-content: center;
-  gap: 2.5rem;
+.layout-nav-wrap {
+  padding-top: .75rem;
+  padding-bottom: 0.75rem;
+  background-color: $primary-color;
 
-  li {
-    &:hover, &.nav-active {
-      font-weight: 600;
-    }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
   }
 }
-.logo-img {
-  position: absolute;
-  margin: 1.75rem 19.5rem;
+.logo-img > a > img {
+  width: 5rem;
 }
+.layout-link-group {
+  display: flex;
+  gap: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hamburger-list-icon {
   display: none;
 }
@@ -39,7 +57,7 @@ header {
     top: 0.719rem;
     left: 0.75rem;
   }
-  .hamburger-list-icon, .cancle-list-icon {
+  .hamburger-list-icon, .cancel-list-icon {
     display: block;
     position: absolute;
     right: 0.75rem;
@@ -47,11 +65,10 @@ header {
   .hamburger-list-icon {
     top: 1.5rem;
   }
-  .cancle-list-icon {
+  .cancel-list-icon {
     top: 1rem;
   }
   .media-link-wrap {
-    @include link-component;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,7 +77,7 @@ header {
     border: 1px solid #F1F1F1;
 
     a {
-      font-size: $font-size-6;
+      font-size: 1.5rem;
       line-height: 1.5;
     }
 
