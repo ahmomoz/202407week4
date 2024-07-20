@@ -10,14 +10,19 @@ const routes = [
         component: () => import('@/views/user/UserHomeView.vue')
       },
       {
-        path: 'service',
-        name: '服務項目',
-        component: () => import('@/views/user/UserServiceView.vue')
+        path: 'products',
+        name: '系列鏡框',
+        component: () => import('@/views/user/UserProductsView.vue')
       },
       {
-        path: 'blog',
+        path: 'stores',
+        name: '門市據點',
+        component: () => import('@/views/user/UserStoresView.vue')
+      },
+      {
+        path: 'blogs',
         name: '部落格',
-        component: () => import('@/views/user/UserBlogView.vue')
+        component: () => import('@/views/user/UserBlogsView.vue')
       },
       {
         path: 'blog/:id',
@@ -25,9 +30,9 @@ const routes = [
         component: () => import('@/views/user/UserBlogContentView.vue')
       },
       {
-        path: 'about',
-        name: '聯絡我',
-        component: () => import('@/views/user/UserAboutView.vue')
+        path: 'QA',
+        name: '常見問題',
+        component: () => import('@/views/user/UserQAView.vue')
       }
     ]
   }

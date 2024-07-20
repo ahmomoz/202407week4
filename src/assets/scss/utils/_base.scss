@@ -1,60 +1,3 @@
-/* reset */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-  v2.0 | 20110126
-  License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1.5;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-*, *:before, *:after {
-  box-sizing: border-box;
-}
 body {
   font-family: "Noto Sans TC","Roboto",-apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -64,6 +7,9 @@ a {
 
 $primary-color: #AA0601;
 $secondary-color: #FBF2F2;
+$dark-red-color: #650300;
+$gray-color: #707070;
+$skin-color: #fbf2f2;
 $dark-color: #000000;
 $light-color: #FFFFFF;
 
@@ -79,32 +25,193 @@ $light-color: #FFFFFF;
 .light-color {
   color: $light-color;
 }
-.h1 {
-  font-size: 4rem; // 64
+.dark-red-color {
+  color: $dark-red-color;
 }
-.h2 {
-  font-size: 3rem; // 48 
+.gray-color {
+  color: $gray-color;
 }
-.h3 {
-  font-size: 2.625rem; // 42
+.skin-color {
+  color: $skin-color;
 }
-.h4 {
-  font-size: 2.25rem; // 36
+.fz-64 {
+  font-size: 64px;
 }
-.h5 {
-  font-size: 2rem; // 32
+.fz-48 {
+  font-size: 48px;
 }
-.h6 {
-  font-size: 1.5rem; // 24
+.fz-42 {
+  font-size: 42px;
 }
-.h7 {
-  font-size: 1.25rem; // 20
+.fz-36 {
+  font-size: 36px;
+}
+.fz-32 {
+  font-size: 32px;
+}
+.fz-24 {
+  font-size: 24px;
 }
 .fz-20 {
-  font-size: 1.25rem;
+  font-size: 20px;
+}
+.fz-16 {
+  font-size: 16px;
+}
+.fz-14 {
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .fz-md-16 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .fz-sm-16 {
+    font-size: 16px;
+  }
+  .fz-sm-24 {
+    font-size: 24px;
+  }
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+.fw-bold {
+  font-weight: bold;
+}
+
+.text-align-center {
+  text-align: center;
+}
+.text-align-left {
+  text-align: left;
+}
+.text-align-end {
+  text-align: end;
+}
+
+.d-flex {
+  display: flex;
+}
+.d-block {
+  display: block;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-space-between {
+  justify-content: space-between;
+}
+.justify-content-flex-end {
+  justify-content: flex-end;
+}
+.align-items-center {
+  align-items: center;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.g-8 {
+  gap: 8px;
+}
+.g-32 {
+  gap: 32px;
+}
+.g-48 {
+  gap: 48px;
+}
+.g-64 {
+  gap: 64px;
+}
+
+.p-16 {
+  padding: 16px;
+}
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.py-32 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.py-296 {
+  padding-top: 296px;
+  padding-bottom: 296px;
+}
+.px-8 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.px-12 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.pt-8 {
+  padding-top: 8px;
+}
+.pt-24 {
+  padding-top: 24px;
+}
+.pt-32 {
+  padding-top: 32px;
+}
+.pt-48 {
+  padding-top: 48px;
+}
+.mt-4 {
+  margin-top: 4px;
+}
+.mt-8 {
+  margin-top: 8px;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+.mt-24 {
+  margin-top: 24px;
+}
+.mt-48 {
+  margin-top: 48px;
+}
+.me-16 {
+  margin-right: 16px;
+}
+
+.w-50 {
+  width: 50%;
+}
+.w-100{
+  width: 100%;
 }
 .container {
-  width: 67.5%;
-  padding-left: .75rem;
-  padding-right: .75rem;
+  max-width: 1296px;
+  margin: 0 auto;
+}
+.column {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.card-row {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 1400px) {
+  .card-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

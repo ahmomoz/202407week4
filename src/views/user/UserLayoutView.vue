@@ -1,126 +1,142 @@
 <template>
-  <nav class="layout-nav-wrap">
-    <transition>
-      <a href="#" class="hamburger-list-icon"
-        @click.prevent="mediaLinkActive =! mediaLinkActive"
-        v-show="!mediaLinkActive">
-        <img src="https://i.imgur.com/mW0FaCA.png" alt="hamburger-list-icon">
-      </a>
-    </transition>
-    <transition>
-      <a href="#" class="cancel-list-icon"
-        @click.prevent="mediaLinkActive =! mediaLinkActive"
-        v-show="mediaLinkActive">
-        <img src="https://i.imgur.com/oD1wN6h.png" alt="cancel-list-icon">
-      </a>
-    </transition>
+  <nav
+    class="layout-nav-wrap py-12"
+    style="background-color: #aa0601;">
     <div class="container">
-      <div class="logo-img">
-        <a href="#">
-          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png" alt="logo">
-        </a>
+      <div class="d-flex card-row layout-nav-group justify-content-space-between align-items-center">
+        <div class="column logo-img">
+          <a href="#">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png" alt="logo">
+          </a>
+        </div>
+        <ul class="column layout-link-group d-flex g-64">
+          <li :class="{ 'link-active' : $route.path === '/products' }">
+            <RouterLink class="layout-link fz-20 fz-sm-16 light-color" to="/products">
+              系列鏡框
+            </RouterLink>
+          </li>
+          <li :class="{ 'link-active' : $route.path === '/stores' }">
+            <RouterLink class="layout-link fz-20 fz-sm-16 light-color" to="/stores">
+              門市據點
+            </RouterLink>
+          </li>
+          <li :class="{ 'link-active' : $route.path === '/blogs' || $route.path === '/blog'}">
+            <RouterLink class="layout-link fz-20 fz-sm-16 light-color" to="/blogs">
+              部落格
+            </RouterLink>
+          </li>
+          <li :class="{ 'link-active' : $route.path === '/QA'}">
+            <RouterLink class="layout-link fz-20 fz-sm-16 light-color" to="/QA">
+              常見問題
+            </RouterLink>
+          </li>
+        </ul>
       </div>
-      <ul class="layout-link-group">
-        <li :class="{ 'link-active' : $route.path === '/' }">
-          <RouterLink class="fz-20 light-color" to="/">
-            系列鏡框
-          </RouterLink>
-        </li>
-        <li :class="{ 'link-active' : $route.path === '/service' }">
-          <RouterLink class="fz-20 light-color" to="/service">
-            門市據點
-          </RouterLink>
-        </li>
-        <li :class="{ 'link-active' : $route.path === '/blog' || $route.path === '/blog/UIUX-news'}">
-          <RouterLink class="fz-20 light-color" to="/blog">
-            部落格
-          </RouterLink>
-        </li>
-        <li :class="{ 'link-active' : $route.path === '/about'}">
-          <RouterLink class="fz-20 light-color" to="/about">
-            常見問題
-          </RouterLink>
-        </li>
-      </ul>
     </div>
   </nav>
-  <transition>
-    <ul class="media-link-wrap" v-show="mediaLinkActive">
-      <li :class="{ 'nav-active' : $route.path === '/' }">
-        <RouterLink to="/" @click="closeMenu">
-          系列鏡框
-        </RouterLink>
-      </li>
-      <li :class="{ 'nav-active' : $route.path === '/service' }">
-        <RouterLink to="/service" @click="closeMenu">
-          門市據點
-        </RouterLink>
-      </li>
-      <li :class="{ 'nav-active' : $route.path === '/blog' }">
-        <RouterLink to="/blog" @click="closeMenu">
-          部落格
-        </RouterLink>
-      </li>
-      <li :class="{ 'nav-active' : $route.path === '/about'}">
-        <RouterLink to="/about" @click="closeMenu">
-          常見問題
-        </RouterLink>
-      </li>
-    </ul>
-  </transition>
   <RouterView />
-  <footer>
-    <div class="footer-logo">
-      <a href="#" class="footer-logo-img">
-        <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/logo.svg" alt="logo">
-      </a>
-      <div class="footer-logo-text">
-        <p>若有數位產品設計和開發相關問題</p>
-        <p>歡迎填寫表單，或直接與我聯絡！</p>
+  <footer
+    class="layout-footer-wrap"
+    style="background-color: #aa0601;">
+    <div class="container">
+      <div class="d-flex card-row layout-footer-group">
+        <div class="column">
+          <nav class="d-flex justify-content-space-between align-items-center pt-48">
+            <ul class="layout-footer-link-group fz-16 d-flex g-48">
+              <li>
+                <RouterLink class="fz-20 fz-md-16 light-color" to="/">
+                  首頁
+                </RouterLink>
+              </li>
+              <li>
+                <RouterLink class="fz-20 fz-md-16 light-color" to="/products">
+                  系列鏡框
+                </RouterLink>
+              </li>
+              <li>
+                <RouterLink class="fz-20 fz-md-16 light-color" to="/stores">
+                  門市據點
+                </RouterLink>
+              </li>
+              <li>
+                <RouterLink class="fz-20 fz-md-16 light-color" to="/blogs">
+                  部落格
+                </RouterLink>
+              </li>
+              <li>
+                <RouterLink class="fz-20 fz-md-16 light-color" to="/QA">
+                  常見問題
+                </RouterLink>
+              </li>
+            </ul>
+            <ul class="icon-group d-flex">
+              <li>
+                <a href="#">
+                  <img
+                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/ic-social-fb.png"
+                    alt="fb-icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/ic_social_ig.png"
+                    alt="ins-icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/ic_social_line.png"
+                    alt="line-icon">
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="layout-footer-contact-group fz-36 pt-24">
+            <li class="d-flex align-items-center">
+              <img
+                src="https://i.imgur.com/c4AvZEX.png"
+                alt="phone-icon"
+                class="me-16">
+              <a
+                href="tel:+0800-000-000"
+                class="fz-sm-16 light-color">
+                0800-000-000
+              </a>
+            </li>
+            <li class="d-flex align-items-center pt-8">
+              <img
+                src="https://i.imgur.com/i7CIpAq.png"
+                alt="mail-icon"
+                class="me-16">
+              <a
+                href="mailto:glasses@business.com"
+                class="fz-sm-16 light-color">
+                glasses@business.com
+              </a>
+            </li>
+          </ul>
+          <section class="pt-32">
+            <div class="copyright-group d-flex justify-content-space-between py-32">
+              <div class="fz-16">
+                <p class="light-color">Copyright © 2020 Glasses.All rights reserved.</p>
+              </div>
+              <ul class="fz-16 d-flex g-48">
+                <li><a href="#" class="light-color">隱私權政策</a></li>
+                <li><a href="#" class="light-color">服務條款</a></li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </div>
-      <a href="#">service@hexschool.com</a>
     </div>
-    <ul class="footer-link-list">
-      <li>
-        <a href="#">
-          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/list.svg" alt="list-icon">
-          <p>填寫表單</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/instagram.svg" alt="ins-icon">
-          <p>hexschool_demo</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/facebook.svg" alt="facebook-icon">
-          <p>hexschoolTW</p>
-        </a>
-      </li>
-    </ul>
   </footer>
-  <transition name="fade">
-    <div class="overlay" v-show="mediaLinkActive"
-      @click="closeMenu"></div>
-  </transition>
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-      mediaLinkActive: false
-    }
-  },
-  methods: {
-    closeMenu () {
-      this.mediaLinkActive = false
-    }
-  }
 }
 </script>
-
 <style scoped>
 </style>

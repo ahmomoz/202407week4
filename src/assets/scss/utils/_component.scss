@@ -1,4 +1,24 @@
-.link-active, .layout-link-group > li:hover {
-  font-weight: 700;
-  border-bottom: .063rem solid $light-color;
+.link-active, 
+.layout-link-group li:hover,
+.layout-footer-link-group li:hover,
+.copyright-group li:hover,
+.layout-footer-contact-group li a:hover {
+  font-weight: bolder;
+}
+.btn {
+  font-size: 20px;
+  background-color: $primary-color;
+  color: $light-color;
+  display: inline-flex;
+  padding: 6px 12px;
+
+  &:hover {
+    background-color: $light-color;
+    color: $primary-color;
+  }
+}
+.text-italic {
+  font-family: 'Roboto', serif;
+  font-style: italic;
+  font-weight: 900;
 }
