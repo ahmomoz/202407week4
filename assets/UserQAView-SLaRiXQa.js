@@ -1,1 +1,0 @@
-import{_ as e,c,o}from"./index-t-9i78IU.js";const t={},s={class:"about-container"};function n(a,r){return o(),c("section",s)}const i=e(t,[["render",n],["__scopeId","data-v-231eb88c"]]);export{i as default};
