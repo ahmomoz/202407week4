@@ -1,0 +1,13 @@
+/* qa-wrap */
+.qa-wrap {
+  .column {
+    width: 66%;
+  }
+}
+@media (max-width: 768px) {
+  .qa-wrap {
+    .column {
+      width: 100%;
+    }
+  }
+}

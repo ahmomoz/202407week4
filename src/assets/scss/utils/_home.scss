@@ -49,6 +49,15 @@
     }
   }
 }
+@media (max-width: 576px) {
+  .home-features-group  {
+    gap: 24px;
+
+    .column {
+      width: 100%;
+    }
+  }
+}
 /* class-glasses-wrap */
 .class-glasses-group {
   .column {
@@ -64,6 +73,13 @@
 
     .column {
       width: 50%;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .class-glasses-group  {
+    .column {
+      width: 100%;
     }
   }
 }
@@ -97,6 +113,13 @@
     }
   }
 }
+@media (max-width: 576px) {
+  .co-glasses-group  {
+    .column {
+      width: 100%;
+    }
+  }
+}
 /* recommend-wrap*/
 .recommend-group {
   .column {
@@ -120,6 +143,18 @@
     .column {
       width: 45.3125%;
     }
+    .column:nth-child(3),
+    .column:nth-child(4) {
+      margin-top: 24px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .recommend-group {
+    .column {
+      width: 100%;
+    }
+    .column:nth-child(2),
     .column:nth-child(3),
     .column:nth-child(4) {
       margin-top: 24px;
@@ -150,5 +185,16 @@
     .column {
       width: 78%;
     }
+  }
+}
+@media (max-width: 576px) {
+  .contact-group {
+    .column {
+      width: 100%;
+    }
+  }
+  .contact-form-btn a {
+    display: block;
+    padding: 16px 0;
   }
 }

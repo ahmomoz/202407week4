@@ -2,9 +2,13 @@
 .layout-link-group li:hover,
 .layout-footer-link-group li:hover,
 .copyright-group li:hover,
-.layout-footer-contact-group li a:hover {
+.layout-footer-contact-group li a:hover,
+.blogs-media-link:hover,
+.blogs-title a:hover,
+.blog-change-page-link-group a:hover {
   font-weight: bolder;
 }
+
 .btn {
   font-size: 20px;
   background-color: $primary-color;
@@ -17,8 +21,36 @@
     color: $primary-color;
   }
 }
+
 .text-italic {
   font-family: 'Roboto', serif;
   font-style: italic;
   font-weight: 900;
+}
+.text-roboto {
+  font-family: 'Roboto';
+}
+
+.products-link-active,
+.products-link:hover {
+  border-bottom: 8px solid $primary-color;
+}
+
+.pagination {
+  a {
+    display: block;
+    padding: 12px 16px;
+    border: 1px solid #555555;
+  }
+
+  &:nth-last-child(1) {
+    background-color: #f2f2f2;
+  }
+}
+.pagination:hover,.pagination-active {
+  background-color: $dark-color;
+
+  a {
+    color: $light-color
+  }
 }

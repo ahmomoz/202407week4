@@ -10,12 +10,12 @@
           </a>
         </div>
         <ul class="column layout-link-group d-flex g-64">
-          <li :class="{ 'link-active' : $route.path === '/products' }">
-            <RouterLink class="layout-link fz-20 fz-sm-16 light-color" to="/products">
+          <li :class="{ 'link-active' : $route.path === '/products/optical' || $route.path === '/products/sunglasses'}">
+            <RouterLink class="layout-link fz-20 fz-sm-16 light-color" to="/products/optical">
               系列鏡框
             </RouterLink>
           </li>
-          <li :class="{ 'link-active' : $route.path === '/stores' }">
+          <li :class="{ 'link-active' : $route.path === '/stores' || $route.path === '/stores/content'}">
             <RouterLink class="layout-link fz-20 fz-sm-16 light-color" to="/stores">
               門市據點
             </RouterLink>
@@ -42,14 +42,14 @@
       <div class="d-flex card-row layout-footer-group">
         <div class="column">
           <nav class="d-flex justify-content-space-between align-items-center pt-48">
-            <ul class="layout-footer-link-group fz-16 d-flex g-48">
+            <ul class="layout-footer-link-group d-flex g-48">
               <li>
                 <RouterLink class="fz-20 fz-md-16 light-color" to="/">
                   首頁
                 </RouterLink>
               </li>
               <li>
-                <RouterLink class="fz-20 fz-md-16 light-color" to="/products">
+                <RouterLink class="fz-20 fz-md-16 light-color" to="/products/optical">
                   系列鏡框
                 </RouterLink>
               </li>
@@ -119,10 +119,10 @@
           </ul>
           <section class="pt-32">
             <div class="copyright-group d-flex justify-content-space-between py-32">
-              <div class="fz-16">
+              <div>
                 <p class="light-color">Copyright © 2020 Glasses.All rights reserved.</p>
               </div>
-              <ul class="fz-16 d-flex g-48">
+              <ul class="d-flex g-48">
                 <li><a href="#" class="light-color">隱私權政策</a></li>
                 <li><a href="#" class="light-color">服務條款</a></li>
               </ul>

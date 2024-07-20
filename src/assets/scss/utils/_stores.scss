@@ -1,0 +1,73 @@
+/* stores-wrap */
+.wrap-title{
+  border-left: 8px solid #9F1213;
+}
+/* stores-select-group */
+.stores-select-group {
+  select {
+    width: 304px;
+    height: 38px;
+  }
+}
+@media (max-width: 576px) {
+  select {
+    width: 100%;
+  }
+}
+/* stores-card-group */
+.stores-card-group {
+  flex-wrap: wrap;
+
+  .column {
+    width: 33.3333333%;
+  }
+  .column:nth-child(n+4) {
+    margin-top: 48px;
+  }
+}
+.stores-card {
+  height: 100%;
+  border: 1px solid #00000020;
+}
+.stores-img.ratio > img {
+  aspect-ratio: 3/2;
+}
+.stores-name {
+  border-bottom: 1px solid #00000020;
+}
+.stores-content {
+  gap: 8px;
+}
+.stores-tel, .stores-time, .stores-address {
+  align-items: flex-start;
+}
+.stores-link {
+  display: block;
+  background: #000000;
+  margin-top: auto;
+
+  &:hover {
+    background: $gray-color;
+  }
+}
+
+@media (max-width: 768px) {
+  .stores-card-group {
+    .column {
+      width: 50%;
+    }
+    .column:nth-child(n+3) {
+      margin-top: 24px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .stores-card-group {
+    .column {
+      width: 100%;
+    }
+    .column:nth-child(n+2) {
+      margin-top: 24px;
+    }
+  }
+}

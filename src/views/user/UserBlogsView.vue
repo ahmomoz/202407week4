@@ -1,228 +1,297 @@
 <template>
-  <main class="blog-list-wrap">
-    <div class="blog-list-header">
-      <div class="blog-title">
-        <span>
-          <svg xmlns="http://www.w3.org/2000/svg"
-            width="100" height="7" viewBox="0 0 100 7" fill="none">
-            <circle cx="3" cy="3.5" r="3" fill="#C1C1C1"/>
-            <path d="M6 3.5H100" stroke="#C1C1C1"/>
-          </svg>
-        </span>
-        <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/title-deco-left-sm.png" alt="title-deco-left-sm">
-        <h3>部落格</h3>
-        <span>
-          <svg xmlns="http://www.w3.org/2000/svg"
-            width="100" height="7" viewBox="0 0 100 7" fill="none">
-            <circle cx="97" cy="3.5" r="3" transform="rotate(-180 97 3.5)" fill="#C1C1C1"/>
-            <path d="M94 3.5L-1.01328e-06 3.49999" stroke="#C1C1C1"/>
-          </svg>
-        </span>
-        <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/title-deco-right-sm.png" alt="title-deco-right-sm">
-      </div>
-      <div class="blog-text">
-        <p>不定期分享技術文章</p>
+  <nav
+    class="blogs-nav-wrap py-13"
+    style="background-color: #650300;"
+  >
+    <div class="container">
+      <div class="d-flex card-row">
+        <div class="column d-flex justify-content-space-between">
+          <ul class="layout-footer-link-group d-flex g-48">
+            <li>
+              <RouterLink class="fz-20 light-color" to="/">
+                最新消息
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink class="fz-20 light-color" to="/">
+                特別企劃
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink class="fz-20 light-color" to="/">
+                新品上市
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink class="fz-20 light-color" to="/">
+                鏡框小知識
+              </RouterLink>
+            </li>
+          </ul>
+          <div class="blogs-icon-group">
+            <a href="#">
+              <img src="https://i.imgur.com/puZIB9L.png" alt="search-logo">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-    <nav class="media-blog-nav-wrap">
-      <ul :class="['media-blog-nav', {'nav-fixed' : isFixed}]">
-        <li :class="{'media-blog-nav-active' : category === ''}"
-            @click="category = ''">
-          全部文章
-        </li>
-        <li :class="{'media-blog-nav-active' : category === 'ui-ux'}"
-            @click="category = 'ui-ux'">
-          UI/UX 新知
-        </li>
-        <li :class="{'media-blog-nav-active' : category === 'digital-products'}"
-            @click="category = 'digital-products'">
-          數位產品設計
-        </li>
-        <li :class="{'media-blog-nav-active' : category === 'graphic-design'}"
-            @click="category = 'graphic-design'">
-          平面設計
-        </li>
-        <li :class="{'media-blog-nav-active' : category === 'front-end-development'}"
-            @click="category = 'front-end-development'">
-          前端開發
-        </li>
-      </ul>
-    </nav>
-    <div class="blog-list-container">
-      <ul class="blog-list">
-        <li v-if="category === '' || category === 'ui-ux'">
-          <RouterLink class="blog-card" :to=" `/blog/UIUX-news`" exact>
-            <div class="blog-card-header">
-              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/article-image1.png" alt="article-image1">
+  </nav>
+  <section class="blogs-wrap py-80 pt-sm-40 pb-sm-64">
+    <div class="container">
+      <div class="d-flex card-row blogs-title-group">
+        <div class="column">
+          <div class="wrap-title mt-16 mt-sm-0">
+            <h2 class="fz-48 fz-sm-24 fw-bold ms-16">
+              部落格
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex card-row blogs-content-group">
+        <ul class="column mt-32">
+          <li class="blogs-card d-flex g-24">
+            <div class="blogs-img w-50">
+              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/blog-1.png" alt="blog-cover">
             </div>
-            <div class="blog-card-body">
-              <div class="blog-card-post-meta">
-                <p>2024/02/10</p>
-                <ul class="blog-tag">
-                  <li><span>UI/UX 新知</span></li>
-                </ul>
+            <div class="blogs-content w-50 d-flex flex-direction-column">
+              <div class="d-flex justify-content-space-between">
+                <div class="blogs-title">
+                  <RouterLink
+                    class="fz-32 fz-md-24 dark-red-color d-block"
+                    to="/blog/content">
+                    情人特別企劃
+                  </RouterLink>
+                  <h7 class="text-roboto fz-20 fz-md-16 fw-medium">
+                    2020 Valentine’s Special
+                  </h7>
+                </div>
+                <div class="blogs-date">
+                  <p class="fw-medium">2020/02/14</p>
+                </div>
               </div>
-              <div class="blog-card-text">
-                <h6>Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</h6>
-                <p>Vision Pro 終於在 2024 年 2 月正式開賣，距離正式發表的 2023 年 6 月，已有半年時間。
-    這半年間，各種質疑聲不斷冒出，例如「太貴了，這是做給投資家看的產品，不能真的大量生產」、「續航力明顯不足，電池太重，不利於隨身攜帶使用」、「隔絕現實世界，會更加深世代或人際關係的隔閡」。</p>
+              <div class="blogs-text mt-16 mt-md-4">
+                <p class="blogs-text-pc fz-20 fz-md-16">
+                  一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！<br/>即日起至2/16為止，不論是熱戀情侶、自由自在一個人或是老夫老妻，只要從未來過本店的新朋友，綁定官方LINE好友，都可享專屬優惠⋯⋯
+                </p>
+                <p class="blogs-text-md fz-20 fz-md-16">
+                  一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！即日起至2/16為止，不論是熱戀情侶、自由自在一個人或是老夫老妻⋯⋯
+                  <RouterLink
+                    class="blogs-media-link dark-color"
+                    to="/blog/content">
+                    more
+                  </RouterLink>
+                </p>
               </div>
-            </div>
-          </RouterLink>
-        </li>
-        <li v-if="category === '' || category === 'ui-ux'">
-          <RouterLink class="blog-card" :to=" `/blog/UIUX-news`" exact>
-            <div class="blog-card-header">
-              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/article-image2.png" alt="article-image2">
-              </div>
-            <div class="blog-card-body">
-              <div class="blog-card-post-meta">
-                <p>2023/11/20</p>
-                <ul class="blog-tag">
-                  <li><span>UI/UX 新知</span></li>
-                </ul>
-              </div>
-              <div class="blog-card-text">
-                <h6>給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)</h6>
-                <p>延續上一篇針對 Dev Mode 介紹這一篇要說的就是最複雜的「右側面板」啦！
-  右側面板預設有兩個分頁：Inspect（偵測）, Plugins（外掛），預設開啟 Inspect。 右側面板也可以顯示 Comment，但需要先在左側面板上方點擊 對話 icon，才可以在右側面板看到所有留言紀錄。</p>
+              <div class="blogs-link">
+                <RouterLink
+                  class="text-roboto dark-red-color fz-36 fw-black"
+                  to="/blog/content">
+                  MORE
+                </RouterLink>
               </div>
             </div>
-          </RouterLink>
-        </li>
-        <li v-if="category === '' || category === 'ui-ux'">
-          <RouterLink class="blog-card" :to=" `/blog/UIUX-news`" exact>
-            <div class="blog-card-header">
-              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/article-image3.png" alt="article-image3">
-              </div>
-            <div class="blog-card-body">
-              <div class="blog-card-post-meta">
-                <p>2023/10/18</p>
-                <ul class="blog-tag">
-                  <li><span>UI/UX 新知</span></li>
-                </ul>
-              </div>
-              <div class="blog-card-text">
-                <h6>給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)</h6>
-                <p>身為工程師，除了精進開發技術、學習新框架、看更多的範例、刷更多的題，為了與其他團隊成員有效合作，也需要學習使用其他協作軟體，例如 Trello, Notion。 而如果是要跟設計師合作，目前最主要的就是使用 Figma了！
-  Figma 是現在最主流的 UIUX 設計軟體，自從開創了「協作功能」之後，幾乎就是把 Adobe XD 和 Sketch 遠遠甩在後頭！</p>
-              </div>
-            </div>
-          </RouterLink>
-        </li>
-        <li v-if="category === '' || category === 'digital-products'">
-          <RouterLink class="blog-card" :to=" `/blog/UIUX-news`" exact>
-            <div class="blog-card-header">
-              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/article-image4.png" alt="article-image4">
-              </div>
-            <div class="blog-card-body">
-              <div class="blog-card-post-meta">
-                <p>2023/09/20</p>
-                <ul class="blog-tag">
-                  <li><span>數位產品設計</span></li>
-                </ul>
-              </div>
-              <div class="blog-card-text">
-                <h6>虛擬實境 (VR) 介面設計對使用者沈浸感影響的研究</h6>
-                <p>在當今數位科技的快速發展下，虛擬實境（VR）技術日益受到關注。VR技術為使用者提供了身臨其境的體驗，並在多個領域中得到應用，如遊戲、教育、醫療等。然而，要實現真正的沈浸感需要考慮多個因素，其中介面設計是至關重要的一環。本研究旨在探討不同介面設計對使用者在虛擬環境中的沈浸感的影響，以期為優化VR技術的使用者體驗提供參考。</p>
-              </div>
-            </div>
-          </RouterLink>
-        </li>
-        <li v-if="category === '' || category === 'digital-products'">
-          <RouterLink class="blog-card" :to=" `/blog/UIUX-news`" exact>
-            <div class="blog-card-header">
-              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/article-image5.png" alt="article-image5">
-              </div>
-            <div class="blog-card-body">
-              <div class="blog-card-post-meta">
-                <p>2023/08/10</p>
-                <ul class="blog-tag">
-                  <li><span>數位產品設計</span></li>
-                </ul>
-              </div>
-              <div class="blog-card-text">
-                <h6>想打到目標受眾？先讓設計師跟你都瞭解他們痛在哪！</h6>
-                <p>一個準備完整的案主，會在發案之前，先準備好這個設計案的目標、受眾、主要功能、參考資料，然後交給設計師參考、發想、研究、使用。
-  有些產品的目標受眾很明確，譬如一個比價 App，受眾目標的特徵可能有：年齡層廣、會使用線上購物、手機使用時間長。 但可以比價的東西實在太多了，若五花八門的商品都要拉進去，設計上需要建立非常多的目錄階層、制定非常多種的產品詳細頁面版型等等。...</p>
-              </div>
-            </div>
-          </RouterLink>
-        </li>
-        <li v-if="category === '' || category === 'front-end-development'">
-          <RouterLink class="blog-card" :to=" `/blog/UIUX-news`" exact>
-            <div class="blog-card-header">
-              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/article-image6.png" alt="article-image6">
-              </div>
-            <div class="blog-card-body">
-              <div class="blog-card-post-meta">
-                <p>2023/07/03</p>
-                <ul class="blog-tag">
-                  <li><span>前端開發</span></li>
-                </ul>
-              </div>
-              <div class="blog-card-text">
-                <h6>React vs. Vue，哪種前端框架比較好用？從三大面向談起</h6>
-                <p>在當今快速發展的前端開發領域中，React和Vue被廣泛認為是兩個最受歡迎和強大的前端框架之一。然而，對於開發人員來說，選擇適合自己的框架可能是一個具有挑戰性的決定。本文將從三個主要面向探討React和Vue：開發效率、性能和生態系統。通過深入比較和分析這些方面，我們將試圖回答一個關鍵問題：React和Vue中哪種前端框架更加適用？這將有助於開發人員更好地理解兩者之間的優勢和劣勢，並在實際應用中做出明智...</p>
-              </div>
-            </div>
-          </RouterLink>
-        </li>
-      </ul>
-      <nav class="blog-nav-wrap">
-        <ul class="blog-nav">
-          <li :class="{'blog-nav-active' : category === ''}"
-              @click="category = ''">
-            全部文章
           </li>
-          <li :class="{'blog-nav-active' : category === 'ui-ux'}"
-              @click="category = 'ui-ux'">
-            UI/UX 新知
+          <li class="blogs-card d-flex g-24 mt-60 mt-md-24">
+            <div class="blogs-img w-50">
+              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/blog-2.png" alt="blog-cover">
+            </div>
+            <div class="blogs-content w-50 d-flex flex-direction-column">
+              <div class="d-flex justify-content-space-between">
+                <div class="blogs-title">
+                  <RouterLink
+                    class="fz-32 fz-md-24 dark-red-color d-block"
+                    to="/blog/content">
+                    街頭潮人訪問
+                  </RouterLink>
+                  <h7 class="text-roboto fz-20 fz-md-16 fw-medium">
+                    Street Interview
+                  </h7>
+                </div>
+                <div class="blogs-date">
+                  <p class="fw-medium">2020/02/02</p>
+                </div>
+              </div>
+              <div class="blogs-text mt-16 mt-md-4">
+                <p class="blogs-text-pc fz-20 fz-md-16">
+                  炎熱的夏季裡，衣著選擇經常希望以簡潔的風格為主，但有時單純只穿搭 T 恤或短袖開襟襯衫，又覺得整體造型度有點不足嗎？那麼不妨可以透過「配件」，為穿搭點綴出與眾不同的視覺層次，而本季有哪些必備的配件系列呢？一起從以下推薦的 3 款單品，讓你瞬間帥氣爆棚散發型男品味⋯⋯
+                </p>
+                <p class="blogs-text-md fz-20 fz-md-16">
+                  炎熱的夏季裡，衣著選擇經常希望以簡潔的風格為主，但有時單純只穿搭 T 恤或短袖開襟襯衫，又覺得整體造型度有點不足嗎？那麼不妨可以透過「配件」，為穿搭點綴出與眾不同的視覺層次，而本季有哪些必備的配件系列呢？一起從以下推薦的 3 款單品，讓你瞬間帥氣⋯⋯
+                  <RouterLink
+                    class="blogs-media-link dark-color"
+                    to="/blog/content">
+                    more
+                  </RouterLink>
+                </p>
+              </div>
+              <div class="blogs-link">
+                <RouterLink
+                  class="text-roboto dark-red-color fz-36 fw-black"
+                  to="/blog/content">
+                  MORE
+                </RouterLink>
+              </div>
+            </div>
           </li>
-          <li :class="{'blog-nav-active' : category === 'digital-products'}"
-              @click="category = 'digital-products'">
-            數位產品設計
+          <li class="blogs-card d-flex g-24 mt-60 mt-md-24">
+            <div class="blogs-img w-50">
+              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/blog-3.png" alt="blog-cover">
+            </div>
+            <div class="blogs-content w-50 d-flex flex-direction-column">
+              <div class="d-flex justify-content-space-between">
+                <div class="blogs-title">
+                  <RouterLink
+                    class="fz-32 fz-md-24 dark-red-color d-block"
+                    to="/blog/content">
+                    春季新品上市
+                  </RouterLink>
+                  <h7 class="text-roboto fz-20 fz-md-16 fw-medium">
+                    New Selection
+                  </h7>
+                </div>
+                <div class="blogs-date">
+                  <p class="fw-medium">2020/02/14</p>
+                </div>
+              </div>
+              <div class="blogs-text mt-16 mt-md-4">
+                <p class="blogs-text-pc fz-20 fz-md-16">
+                  2020 年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯
+                </p>
+                <p class="blogs-text-md fz-20 fz-md-16">
+                  一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！即日起至2/16為止，不論是熱戀情侶、自由自在一個人或是老夫老妻⋯⋯
+                  <RouterLink
+                    class="blogs-media-link dark-color"
+                    to="/blog/content">
+                    more
+                  </RouterLink>
+                </p>
+              </div>
+              <div class="blogs-link">
+                <RouterLink
+                  class="text-roboto dark-red-color fz-36 fw-black"
+                  to="/blog/content">
+                  MORE
+                </RouterLink>
+              </div>
+            </div>
           </li>
-          <li :class="{'blog-nav-active' : category === 'graphic-design'}"
-              @click="category = 'graphic-design'">
-            平面設計
+          <li class="blogs-card d-flex g-24 mt-60 mt-md-24">
+            <div class="blogs-img w-50">
+              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/blog-4.png" alt="blog-cover">
+            </div>
+            <div class="blogs-content w-50 d-flex flex-direction-column">
+              <div class="d-flex justify-content-space-between">
+                <div class="blogs-title">
+                  <RouterLink
+                    class="fz-32 fz-md-24 dark-red-color d-block"
+                    to="/blog/content">
+                    設計師獨享鏡框優惠
+                  </RouterLink>
+                  <h7 class="text-roboto fz-20 fz-md-16 fw-medium">
+                    Sales for Designer
+                  </h7>
+                </div>
+                <div class="blogs-date">
+                  <p class="fw-medium">2020/01/18</p>
+                </div>
+              </div>
+              <div class="blogs-text mt-16 mt-md-4">
+                <p class="blogs-text-pc fz-20 fz-md-16">
+                  2020 年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯
+                </p>
+                <p class="blogs-text-md fz-20 fz-md-16">
+                  2020 年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，⋯⋯
+                  <RouterLink
+                    class="blogs-media-link dark-color"
+                    to="/blog/content">
+                    more
+                  </RouterLink>
+                </p>
+              </div>
+              <div class="blogs-link">
+                <RouterLink
+                  class="text-roboto dark-red-color fz-36 fw-black"
+                  to="/blog/content">
+                  MORE
+                </RouterLink>
+              </div>
+            </div>
           </li>
-          <li :class="{'blog-nav-active' : category === 'front-end-development'}"
-              @click="category = 'front-end-development'">
-            前端開發
+          <li class="blogs-card d-flex g-24 mt-60 mt-md-24">
+            <div class="blogs-img w-50">
+              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/blog-5.png" alt="blog-cover">
+            </div>
+            <div class="blogs-content w-50 d-flex flex-direction-column">
+              <div class="d-flex justify-content-space-between">
+                <div class="blogs-title">
+                  <RouterLink
+                    class="fz-32 fz-md-24 dark-red-color d-block"
+                    to="/blog/content">
+                    抵抗夏日大作戰
+                  </RouterLink>
+                  <h7 class="text-roboto fz-20 fz-md-16 fw-medium">
+                    Summer Special
+                  </h7>
+                </div>
+                <div class="blogs-date">
+                  <p class="fw-medium">2019/08/07</p>
+                </div>
+              </div>
+              <div class="blogs-text mt-16 mt-md-4">
+                <p class="blogs-text-pc fz-20 fz-md-16">
+                  2020 年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯
+                </p>
+                <p class="blogs-text-md fz-20 fz-md-16">
+                  2020 年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，⋯⋯
+                  <RouterLink
+                    class="blogs-media-link dark-color"
+                    to="/blog/content">
+                    more
+                  </RouterLink>
+                </p>
+              </div>
+              <div class="blogs-link">
+                <RouterLink
+                  class="text-roboto dark-red-color fz-36 fw-black"
+                  to="/blog/content">
+                  MORE
+                </RouterLink>
+              </div>
+            </div>
           </li>
         </ul>
-      </nav>
+      </div>
+      <div class="d-flex card-row products-page-group justify-content-center mt-124 mt-md-80 mt-sm-64">
+        <ul class="column d-flex">
+          <li class="pagination">
+            <a href="#" >上一頁</a>
+          </li>
+          <li class="pagination">
+            <a href="#">1</a>
+          </li>
+          <li class="pagination pagination-active">
+            <a href="#">2</a>
+          </li>
+          <li class="pagination">
+            <a href="#">3</a>
+          </li>
+          <li class="pagination">
+            <a href="#">4</a>
+          </li>
+          <li class="pagination">
+            <a href="#">5</a>
+          </li>
+          <li class="pagination">
+            <a href="#">下一頁</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </main>
+  </section>
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-      isFixed: false,
-      scrollPosition: 0,
-      category: ''
-    }
-  },
-  methods: {
-    handleScroll () {
-      this.scrollPosition = window.scrollY
-      if (this.scrollPosition > 220) {
-        this.isFixed = true
-      } else {
-        this.isFixed = false
-      }
-    }
-  },
-  mounted () {
-    window.addEventListener('scroll', this.handleScroll)
-  },
-  beforeUnmount () {
-    window.removeEventListener('scroll', this.handleScroll)
-  }
-}
 </script>
 <style scoped>
 </style>

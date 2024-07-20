@@ -15,10 +15,10 @@
     </div>
   </header>
   <section
-    class="home-features-wrap text-align-center py-80"
+    class="home-features-wrap text-align-center py-80 py-sm-40"
     style="background-color: #fbf2f2;">
     <div class="container">
-      <h2 class="fz-48 fw-bold dark-red-color">
+      <h2 class="fz-48 fz-sm-24 fw-bold dark-red-color">
         用專業的心，做專業的事
       </h2>
       <ul class="d-flex card-row home-features-group justify-content-center mt-24">
@@ -61,12 +61,12 @@
       </ul>
     </div>
   </section>
-  <section class="class-glasses-wrap text-align-center py-80">
+  <section class="class-glasses-wrap text-align-center py-80 py-sm-40">
     <div class="container">
-      <h2 class="fz-48 fw-bold dark-red-color">
+      <h2 class="fz-48 fz-sm-24 fw-bold dark-red-color">
         經典系列鏡框
       </h2>
-      <div class="d-flex card-row class-glasses-group mt-48">
+      <div class="d-flex card-row class-glasses-group mt-48 mt-sm-24">
         <div class="column">
           <div class="class-glasses-img">
             <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section3-1.png" alt="class-glasses-image">
@@ -94,17 +94,17 @@
       </div>
     </div>
   </section>
-  <section class="co-glasses-wrap bg text-align-center px-12 py-80">
+  <section class="co-glasses-wrap bg text-align-center px-12 py-80 py-sm-40">
     <div class="container">
-      <h2 class="fz-48 fw-bold light-color">
+      <h2 class="fz-48 fz-sm-24 fw-bold light-color">
         聯名設計鏡框
       </h2>
-      <div class="d-flex card-row co-glasses-group mt-48">
+      <div class="d-flex card-row co-glasses-group mt-48 mt-sm-24">
         <div class="column">
           <div class="co-glasses-img d-flex justify-content-center align-items-center">
             <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section4-1-sm.png" alt="co-glasses-image">
           </div>
-          <div class="co-glasses-title px-8" style="background-color: #ffffff;">
+          <div class="co-glasses-title py-8" style="background-color: #ffffff;">
             <h2 class="fz-48 text-italic primary-color">DOUBLE A+</h2>
           </div>
         </div>
@@ -112,19 +112,19 @@
           <div class="co-glasses-img d-flex justify-content-center align-items-center">
             <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section4-2-sm.png" alt="co-glasses-image">
           </div>
-          <div class="co-glasses-title px-8" style="background-color: #ffffff;">
+          <div class="co-glasses-title py-8" style="background-color: #ffffff;">
             <h2 class="fz-48 text-italic primary-color">YOUTH</h2>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="recommend-wrap py-80">
+  <section class="recommend-wrap py-80 py-sm-40">
     <div class="container">
-      <h2 class="fz-48 fw-bold dark-red-color text-align-center">
+      <h2 class="fz-48 fz-sm-24 fw-bold dark-red-color text-align-center">
         顧客推薦
       </h2>
-      <ul class="d-flex card-row recommend-group mt-48">
+      <ul class="d-flex card-row recommend-group mt-48 mt-sm-24">
         <li class="column">
           <div class="recommend-card">
             <div class="recommend-img">
@@ -201,15 +201,15 @@
     </div>
   </section>
   <section
-    class="contact-wrap py-80"
+    class="contact-wrap py-80 py-sm-40"
     style="background-color: #fbf2f2;">
     <div class="container">
-      <h2 class="fz-48 fw-bold dark-red-color text-align-center ">
+      <h2 class="fz-48 fz-sm-24 fw-bold dark-red-color text-align-center ">
         聯絡我們
       </h2>
       <div class="d-flex card-row contact-group justify-content-center">
         <div class="column">
-          <p class="fz-20 fz-md-16 mt-48">
+          <p class="fz-20 fz-md-16 mt-48 mt-sm-24">
             我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
           </p>
           <form>
@@ -250,7 +250,7 @@
             <label for="privacy policy" class="mt-16">
               我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
             </label>
-            <div class="contact-form-btn text-align-center mt-48">
+            <div class="contact-form-btn text-align-center mt-48 mt-sm-24">
               <a href="#" class="btn fz-md-16">
                 確認送出
               </a>

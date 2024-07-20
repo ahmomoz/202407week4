@@ -10,9 +10,14 @@ const routes = [
         component: () => import('@/views/user/UserHomeView.vue')
       },
       {
-        path: 'products',
-        name: '系列鏡框',
-        component: () => import('@/views/user/UserProductsView.vue')
+        path: 'products/optical',
+        name: '系列鏡框-光學眼鏡',
+        component: () => import('@/views/user/UserProductsOpticalView.vue')
+      },
+      {
+        path: 'products/sunglasses',
+        name: '系列鏡框-太陽眼鏡',
+        component: () => import('@/views/user/UserProductsSunglassesView.vue')
       },
       {
         path: 'stores',
@@ -20,13 +25,18 @@ const routes = [
         component: () => import('@/views/user/UserStoresView.vue')
       },
       {
+        path: 'stores/content',
+        name: '門市單一頁面',
+        component: () => import('@/views/user/UserStoreContentView.vue')
+      },
+      {
         path: 'blogs',
         name: '部落格',
         component: () => import('@/views/user/UserBlogsView.vue')
       },
       {
-        path: 'blog/:id',
-        name: '部落格單一內文頁面',
+        path: 'blog/content',
+        name: '部落格單一頁面',
         component: () => import('@/views/user/UserBlogContentView.vue')
       },
       {
