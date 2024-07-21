@@ -5,7 +5,7 @@
   >
     <div class="container">
       <div class="d-flex card-row">
-        <div class="column d-flex justify-content-space-between">
+        <div class="column w-100 d-flex justify-content-space-between">
           <ul class="layout-footer-link-group d-flex g-48">
             <li>
               <RouterLink class="fz-20 light-color" to="/">
