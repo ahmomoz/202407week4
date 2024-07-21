@@ -3,7 +3,7 @@
     <div class="container">
       <div class="d-flex card-row products-nav-group w-100">
         <ul class="column d-flex w-100">
-          <li>
+          <li class="w-33 text-align-center">
             <RouterLink
               class="text-roboto products-link fz-32 fz-md-24 fz-sm-16 dark-color fw-medium py-24 py-md-16"
               :class="{ 'products-link-active' : $route.path === '/products/optical' }"
@@ -11,7 +11,7 @@
               OPTICAL
             </RouterLink>
           </li>
-          <li>
+          <li class="w-33 text-align-center">
             <RouterLink
               class="text-roboto products-link fz-32 fz-md-24 fz-sm-16 dark-color fw-medium py-24 py-md-16"
               :class="{ 'products-link-active' : $route.path === '/products/sunglasses' }"
@@ -19,7 +19,7 @@
               SUNGLASSES
             </RouterLink>
           </li>
-          <li>
+          <li class="w-33 text-align-center">
             <RouterLink
               class="text-roboto products-link fz-32 fz-md-24 fz-sm-16 dark-color fw-medium py-24 py-md-16"
               :class="{ 'products-link-active' : $route.path === '/products/functional' }"
@@ -33,13 +33,13 @@
   </nav>
   <header class="products-banner-wrap">
     <div class="d-flex products-banner-group">
-      <div class="column">
+      <div class="column w-50">
         <picture>
           <source srcset="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-sm-3.png" media="(max-width: 768px)">
           <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-3.png" alt="glasses-image">
         </picture>
       </div>
-      <div class="column">
+      <div class="column w-50">
         <picture>
           <source srcset="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-sm-4.png" media="(max-width: 768px)">
           <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-4.png" alt="glasses-image">
@@ -56,7 +56,7 @@
         賽璐珞鈦金屬混合鏡框
       </h2>
       <div class="d-flex card-row sunglasses-glasses-group text-roboto justify-content-center mt-32">
-        <div class="column">
+        <div class="column w-33 w-lg-50 w-sm-100">
           <div class="product-card-img">
             <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-7.png" alt="glasses-image">
           </div>
@@ -69,7 +69,7 @@
             <div style="width: 24px;height: 24px;background-color: #B75929;border-radius: 4px;margin-left: 8px;"></div>
           </div>
         </div>
-        <div class="column">
+        <div class="column w-33 w-lg-50 w-sm-100">
           <div class="product-card-img">
             <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-8.png" alt="glasses-image">
           </div>
@@ -82,7 +82,7 @@
             <div style="width: 24px;height: 24px;background-color: #B75929;border-radius: 4px;margin-left: 8px;"></div>
           </div>
         </div>
-        <div class="column">
+        <div class="column w-33 w-lg-50 w-sm-100">
           <div class="product-card-img">
             <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-9.png" alt="glasses-image">
           </div>
@@ -95,7 +95,7 @@
             <div style="width: 24px;height: 24px;background-color: #B75929;border-radius: 4px;margin-left: 8px;"></div>
           </div>
         </div>
-        <div class="column">
+        <div class="column w-33 w-lg-50 w-sm-100">
           <div class="product-card-img">
             <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-10.png" alt="glasses-image">
           </div>
@@ -108,7 +108,7 @@
             <div style="width: 24px;height: 24px;background-color: #B75929;border-radius: 4px;margin-left: 8px;"></div>
           </div>
         </div>
-        <div class="column">
+        <div class="column w-33 w-lg-50 w-sm-100">
           <div class="product-card-img">
             <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-11.png" alt="glasses-image">
           </div>
@@ -121,7 +121,7 @@
             <div style="width: 24px;height: 24px;background-color: #B75929;border-radius: 4px;margin-left: 8px;"></div>
           </div>
         </div>
-        <div class="column">
+        <div class="column w-33 w-lg-50 w-sm-100">
           <div class="product-card-img">
             <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-12.png" alt="glasses-image">
           </div>

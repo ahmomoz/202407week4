@@ -2,11 +2,6 @@
 .home-header-wrap {
   background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true');
 }
-.home-header-group {
-  .column {
-    width: 50%;
-  }
-}
 
 @media (max-width: 1200px) {
   .home-header-wrap {
@@ -14,19 +9,11 @@
     background-position: top;
     background-size: cover;
   }
-  .home-header-group {
-    .column {
-      width: 100%;
-    }
-  }
 }
 
 @media (max-width: 576px) {
   .home-header-wrap {
     padding: 144px 0;
-  }
-  .home-header-link {
-    margin-top: 8px;
   }
 }
 /* home-features-wrap */
@@ -34,53 +21,18 @@
   img {
     width: 100px;
   }
-  
-  .column {
-    width: 25%;
-  }
 }
 
 @media (max-width: 1200px) {
   .home-features-group  {
     flex-wrap: wrap;
-
-    .column {
-      width: 45.3125%;
-    }
-  }
-}
-@media (max-width: 576px) {
-  .home-features-group  {
-    gap: 24px;
-
-    .column {
-      width: 100%;
-    }
   }
 }
 /* class-glasses-wrap */
-.class-glasses-group {
-  .column {
-    width: 33.33333333%;
-  }
-}
-
 @media (max-width: 1200px) {
   .class-glasses-group  {
     flex-direction: column;
     align-items: center;
-    gap: 24px;
-
-    .column {
-      width: 50%;
-    }
-  }
-}
-@media (max-width: 576px) {
-  .class-glasses-group  {
-    .column {
-      width: 100%;
-    }
   }
 }
 /* co-glasses-wrap  */
@@ -89,7 +41,6 @@
 }
 .co-glasses-group {
   .column {
-    width: 50%;
     padding: 0;
   }
 }
@@ -102,30 +53,18 @@
   .co-glasses-wrap {
     background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-sm.png');
     background-position: top;
+
+    .column {
+      padding-right: 12px;
+      padding-left: 12px;
+    }
   }
   .co-glasses-group {
     justify-content: center;
     flex-wrap: wrap;
-    gap: 24px;
-    
-    .column {
-      width: 90.625%;  
-    }
-  }
-}
-@media (max-width: 576px) {
-  .co-glasses-group  {
-    .column {
-      width: 100%;
-    }
   }
 }
 /* recommend-wrap*/
-.recommend-group {
-  .column {
-    width: 25%;
-  }
-}
 .recommend-card {
   box-shadow: 0px 2px 6px #00000029;
   border: 1px solid #DEE2E6;
@@ -139,34 +78,10 @@
   .recommend-group {
     justify-content: center;
     flex-wrap: wrap;
-
-    .column {
-      width: 45.3125%;
-    }
-    .column:nth-child(3),
-    .column:nth-child(4) {
-      margin-top: 24px;
-    }
-  }
-}
-@media (max-width: 576px) {
-  .recommend-group {
-    .column {
-      width: 100%;
-    }
-    .column:nth-child(2),
-    .column:nth-child(3),
-    .column:nth-child(4) {
-      margin-top: 24px;
-    }
   }
 }
 /* contact-wrap */
 .contact-group {
-  .column {
-    width: 50%;
-  }
-  
   input {
     padding: 6px 12px;
     background-color: transparent;
@@ -180,19 +95,7 @@
   padding: 16px 176px;
 }
 
-@media (max-width: 1200px) {
-  .contact-group {
-    .column {
-      width: 78%;
-    }
-  }
-}
 @media (max-width: 576px) {
-  .contact-group {
-    .column {
-      width: 100%;
-    }
-  }
   .contact-form-btn a {
     display: block;
     padding: 16px 0;

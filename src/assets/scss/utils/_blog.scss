@@ -1,9 +1,4 @@
 /* blogs-nav-wrap */
-.blogs-nav-wrap {
-  .column {
-    width: 100%;
-  }
-}
 .blogs-icon-group > a{
   img {
     width: 30px;
@@ -47,10 +42,6 @@
   .blogs-card {
     flex-direction: column;
     gap: 8px
-  }
-  .blogs-img,
-  .blogs-content {
-    width: 100%;
   }
   .blogs-nav-wrap,
   .blogs-media-link,

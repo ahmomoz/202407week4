@@ -297,6 +297,12 @@ $black-color: #212529;
   }
 }
 
+.w-25 {
+  width: 25%;
+}
+.w-33 {
+  width: 33.33333333%;
+}
 .w-50 {
   width: 50%;
 }
@@ -327,3 +333,38 @@ $black-color: #212529;
     margin-right: 0;
   }
 }
+@media (max-width: 1200px) {
+  .w-lg-50 {
+    width: 50%;
+  }
+  .w-lg-100 {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .card-row {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  .w-md-50 {
+    width: 50%;
+  }
+  .w-md-80 {
+    width: 80%;
+  }
+  .w-md-100 {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .card-row {
+    padding-right: 2px;
+    padding-left: 2px;
+  }
+  .w-sm-100 {
+    width: 100%;
+  }
+}
+
+
+

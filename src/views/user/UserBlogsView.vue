@@ -5,7 +5,7 @@
   >
     <div class="container">
       <div class="d-flex card-row">
-        <div class="column d-flex justify-content-space-between">
+        <div class="column w-100 d-flex justify-content-space-between">
           <ul class="layout-footer-link-group d-flex g-48">
             <li>
               <RouterLink class="fz-20 light-color" to="/">
@@ -51,10 +51,10 @@
       <div class="d-flex card-row blogs-content-group">
         <ul class="column mt-32">
           <li class="blogs-card d-flex g-24">
-            <div class="blogs-img w-50">
+            <div class="blogs-img w-50 w-sm-100">
               <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/blog-1.png" alt="blog-cover">
             </div>
-            <div class="blogs-content w-50 d-flex flex-direction-column">
+            <div class="blogs-content w-50 w-sm-100 d-flex flex-direction-column">
               <div class="d-flex justify-content-space-between">
                 <div class="blogs-title">
                   <RouterLink
@@ -93,10 +93,10 @@
             </div>
           </li>
           <li class="blogs-card d-flex g-24 mt-60 mt-md-24">
-            <div class="blogs-img w-50">
+            <div class="blogs-img w-50 w-sm-100">
               <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/blog-2.png" alt="blog-cover">
             </div>
-            <div class="blogs-content w-50 d-flex flex-direction-column">
+            <div class="blogs-content w-50 w-sm-100 d-flex flex-direction-column">
               <div class="d-flex justify-content-space-between">
                 <div class="blogs-title">
                   <RouterLink
@@ -135,10 +135,10 @@
             </div>
           </li>
           <li class="blogs-card d-flex g-24 mt-60 mt-md-24">
-            <div class="blogs-img w-50">
+            <div class="blogs-img w-50 w-sm-100">
               <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/blog-3.png" alt="blog-cover">
             </div>
-            <div class="blogs-content w-50 d-flex flex-direction-column">
+            <div class="blogs-content w-50 w-sm-100 d-flex flex-direction-column">
               <div class="d-flex justify-content-space-between">
                 <div class="blogs-title">
                   <RouterLink
@@ -177,10 +177,10 @@
             </div>
           </li>
           <li class="blogs-card d-flex g-24 mt-60 mt-md-24">
-            <div class="blogs-img w-50">
+            <div class="blogs-img w-50 w-sm-100">
               <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/blog-4.png" alt="blog-cover">
             </div>
-            <div class="blogs-content w-50 d-flex flex-direction-column">
+            <div class="blogs-content w-50 w-sm-100 d-flex flex-direction-column">
               <div class="d-flex justify-content-space-between">
                 <div class="blogs-title">
                   <RouterLink
@@ -219,10 +219,10 @@
             </div>
           </li>
           <li class="blogs-card d-flex g-24 mt-60 mt-md-24">
-            <div class="blogs-img w-50">
+            <div class="blogs-img w-50 w-sm-100">
               <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/blog-5.png" alt="blog-cover">
             </div>
-            <div class="blogs-content w-50 d-flex flex-direction-column">
+            <div class="blogs-content w-50 w-sm-100 d-flex flex-direction-column">
               <div class="d-flex justify-content-space-between">
                 <div class="blogs-title">
                   <RouterLink

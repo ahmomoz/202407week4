@@ -18,9 +18,6 @@
 .stores-card-group {
   flex-wrap: wrap;
 
-  .column {
-    width: 33.3333333%;
-  }
   .column:nth-child(n+4) {
     margin-top: 48px;
   }
@@ -53,9 +50,6 @@
 
 @media (max-width: 768px) {
   .stores-card-group {
-    .column {
-      width: 50%;
-    }
     .column:nth-child(n+3) {
       margin-top: 24px;
     }
@@ -63,9 +57,6 @@
 }
 @media (max-width: 576px) {
   .stores-card-group {
-    .column {
-      width: 100%;
-    }
     .column:nth-child(n+2) {
       margin-top: 24px;
     }

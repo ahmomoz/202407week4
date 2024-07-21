@@ -23,7 +23,7 @@
         </div>
       </div>
       <ul class="d-flex card-row stores-card-group mt-40 mt-sm-24">
-        <li class="column">
+        <li class="column w-33 w-md-50 w-sm-100">
           <div class="stores-card d-flex flex-direction-column">
             <div class="stores-img ratio">
               <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/store-1.png" alt="store-image">
@@ -66,7 +66,7 @@
             </RouterLink>
           </div>
         </li>
-        <li class="column">
+        <li class="column w-33 w-md-50 w-sm-100">
           <div class="stores-card d-flex flex-direction-column">
             <div class="stores-img ratio">
               <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/store-2.png" alt="store-image">
@@ -109,7 +109,7 @@
             </RouterLink>
           </div>
         </li>
-        <li class="column">
+        <li class="column w-33 w-md-50 w-sm-100">
           <div class="stores-card d-flex flex-direction-column">
             <div class="stores-img ratio">
               <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/store-3.png" alt="store-image">
@@ -152,7 +152,7 @@
             </RouterLink>
           </div>
         </li>
-        <li class="column">
+        <li class="column w-33 w-md-50 w-sm-100">
           <div class="stores-card d-flex flex-direction-column">
             <div class="stores-img ratio">
               <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/store-4.png" alt="store-image">
@@ -195,7 +195,7 @@
             </RouterLink>
           </div>
         </li>
-        <li class="column">
+        <li class="column w-33 w-md-50 w-sm-100">
           <div class="stores-card d-flex flex-direction-column">
             <div class="stores-img ratio">
               <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/store-5.png" alt="store-image">

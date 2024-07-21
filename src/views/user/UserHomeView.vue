@@ -2,12 +2,12 @@
   <header class="home-header-wrap bg py-296">
     <div class="container">
       <div class="d-flex card-row home-header-group justify-content-flex-end">
-        <div class="column dark-red-color text-align-end">
+        <div class="column w-50 w-lg-100 dark-red-color text-align-end">
           <div class="home-header-title">
             <h4 class="fz-36 fz-sm-16">Promise-Desert 2020 早春系列</h4>
             <h1 class="fz-64 fz-sm-24 fw-bold">看得清，才能看得遠</h1>
           </div>
-          <div class="home-header-link mt-4">
+          <div class="home-header-link mt-4 mt-md-8">
             <a href="#" class="btn">立即購買</a>
           </div>
         </div>
@@ -22,7 +22,7 @@
         用專業的心，做專業的事
       </h2>
       <ul class="d-flex card-row home-features-group justify-content-center mt-24">
-        <li class="column">
+        <li class="column w-25 w-lg-50 w-sm-100">
           <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section2-1.png" alt="money-icon">
           <h6 class="fz-24 fw-bold dark-red-color mt-16">
             單一價格
@@ -31,7 +31,7 @@
             無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。
           </p>
         </li>
-        <li class="column">
+        <li class="column w-25 w-lg-50 w-sm-100 mt-sm-24">
           <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section2-2.png" alt="time-icon">
           <h6 class="fz-24 fw-bold dark-red-color mt-16">
             20 分鐘即可取件
@@ -40,7 +40,7 @@
             為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。
           </p>
         </li>
-        <li class="column">
+        <li class="column w-25 w-lg-50 w-sm-100 mt-md-24">
           <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section2-3.png" alt="heart-icon">
           <h6 class="fz-24 fw-bold dark-red-color mt-16">
             安心售後服務
@@ -49,7 +49,7 @@
             我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。
           </p>
         </li>
-        <li class="column">
+        <li class="column w-25 w-lg-50 w-sm-100 mt-md-24">
           <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-sectioin2-4.png" alt="glasses-icon">
           <h6 class="fz-24 fw-bold dark-red-color mt-16">
             關於鏡片
@@ -67,7 +67,7 @@
         經典系列鏡框
       </h2>
       <div class="d-flex card-row class-glasses-group mt-48 mt-sm-24">
-        <div class="column">
+        <div class="column w-33 w-lg-50 w-sm-100">
           <div class="class-glasses-img">
             <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section3-1.png" alt="class-glasses-image">
           </div>
@@ -75,7 +75,7 @@
             <h2 class="fz-48 text-italic primary-color">OPTICAL</h2>
           </div>
         </div>
-        <div class="column">
+        <div class="column w-33 w-lg-50 w-sm-100 mt-md-24">
           <div class="class-glasses-img">
             <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section3-2.png" alt="class-glasses-image">
           </div>
@@ -83,7 +83,7 @@
             <h2 class="fz-48 text-italic primary-color">SUNGLASSES</h2>
           </div>
         </div>
-        <div class="column">
+        <div class="column w-33 w-lg-50 w-sm-100 mt-md-24">
           <div class="class-glasses-img">
             <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section3-3.png" alt="class-glasses-image">
           </div>
@@ -94,13 +94,13 @@
       </div>
     </div>
   </section>
-  <section class="co-glasses-wrap bg text-align-center px-12 py-80 py-sm-40">
+  <section class="co-glasses-wrap bg text-align-center py-80 py-sm-40">
     <div class="container">
       <h2 class="fz-48 fz-sm-24 fw-bold light-color">
         聯名設計鏡框
       </h2>
       <div class="d-flex card-row co-glasses-group mt-48 mt-sm-24">
-        <div class="column">
+        <div class="column w-50 w-md-100">
           <div class="co-glasses-img d-flex justify-content-center align-items-center">
             <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section4-1-sm.png" alt="co-glasses-image">
           </div>
@@ -108,7 +108,7 @@
             <h2 class="fz-48 text-italic primary-color">DOUBLE A+</h2>
           </div>
         </div>
-        <div class="column">
+        <div class="column w-50 w-md-100 mt-md-24">
           <div class="co-glasses-img d-flex justify-content-center align-items-center">
             <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section4-2-sm.png" alt="co-glasses-image">
           </div>
@@ -125,7 +125,7 @@
         顧客推薦
       </h2>
       <ul class="d-flex card-row recommend-group mt-48 mt-sm-24">
-        <li class="column">
+        <li class="column w-25 w-md-50 w-sm-100">
           <div class="recommend-card">
             <div class="recommend-img">
               <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section5-1.png" alt="recommend-people-image">
@@ -143,7 +143,7 @@
             </div>
           </div>
         </li>
-        <li class="column">
+        <li class="column w-25 w-md-50 w-sm-100 mt-sm-24">
           <div class="recommend-card">
             <div class="recommend-img">
               <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section5-2.png" alt="recommend-people-image">
@@ -161,7 +161,7 @@
             </div>
           </div>
         </li>
-        <li class="column">
+        <li class="column w-25 w-md-50 w-sm-100 mt-md-24">
           <div class="recommend-card">
             <div class="recommend-img">
               <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section5-3.png" alt="recommend-people-image">
@@ -179,7 +179,7 @@
             </div>
           </div>
         </li>
-        <li class="column">
+        <li class="column w-25 w-md-50 w-sm-100 mt-md-24">
           <div class="recommend-card">
             <div class="recommend-img">
               <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section5-4.png" alt="recommend-people-image">
@@ -208,7 +208,7 @@
         聯絡我們
       </h2>
       <div class="d-flex card-row contact-group justify-content-center">
-        <div class="column">
+        <div class="column w-50 w-md-80 w-sm-100">
           <p class="fz-20 fz-md-16 mt-48 mt-sm-24">
             我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
           </p>
