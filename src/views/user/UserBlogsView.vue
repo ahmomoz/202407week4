@@ -265,25 +265,25 @@
       <div class="d-flex card-row products-page-group justify-content-center mt-124 mt-md-80 mt-sm-64">
         <ul class="column d-flex">
           <li class="pagination">
-            <a href="#" >上一頁</a>
+            <a href="#" class="dark-color">上一頁</a>
           </li>
           <li class="pagination">
-            <a href="#">1</a>
+            <a href="#" class="dark-color">1</a>
           </li>
           <li class="pagination pagination-active">
-            <a href="#">2</a>
+            <a href="#" class="dark-color">2</a>
           </li>
           <li class="pagination">
-            <a href="#">3</a>
+            <a href="#" class="dark-color">3</a>
           </li>
           <li class="pagination">
-            <a href="#">4</a>
+            <a href="#" class="dark-color">4</a>
           </li>
           <li class="pagination">
-            <a href="#">5</a>
+            <a href="#" class="dark-color">5</a>
           </li>
           <li class="pagination">
-            <a href="#">下一頁</a>
+            <a href="#" class="dark-color">下一頁</a>
           </li>
         </ul>
       </div>
